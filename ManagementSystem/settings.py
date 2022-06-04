@@ -149,7 +149,7 @@ CACHES = {
 
 LOGIN_REDIRECT_URL = 'home'
 LOGIN_URL = 'login'
-
+SITE_ID = 2
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
