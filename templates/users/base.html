@@ -7,7 +7,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>LMS</title>
+    <title>Management System Using Python | Django </title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
@@ -61,10 +61,10 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="{% url 'home' %}#about">ABOUT</a>
+                            <a class="nav-link" href="https://www.linkedin.com/in/abdelmegeed-ahmed/">ABOUT & Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{% url 'home' %}#contact">CONTACT</a>
+                            <a class="nav-link" href="#">Github Project Repository</a>
                         </li>
                         {% if user.is_authenticated %}
                         <li class="nav-item">
@@ -130,6 +130,7 @@
 
 
     <footer id="contact" class="footer">
+
         <div class="container-fluid bg-dark mt-5">
             <h1 class="text-white text-center">Contact</h1>
             <hr style="background-color:white;">
@@ -140,16 +141,16 @@
                 <div class="col-sm-12 col-md-4 text-center mb-30">
                     <h3>Mobile:</h3>
                     <hr style="width: 30%; color: black; height: 1px; background-color:white;">
-                    <a class="button phone" href=""><i class="fa fa-phone pho"
-                            style="font-size:25px;color:white"></i> Phone</a>
+                    <a class="button phone" href=""><i class="fa fa-phone"
+                            style="font-size:25px;color:white"></i> Phone : +971524231663</a>
                 </div>
                 <div class="col-sm-12 col-md-4 text-center mt-10">
                     <h3>Address</h3>
                     <hr style="width: 30%; color: black; height: 1px; background-color:white;">
-                    <p style="padding:0px 5px;">Lms website, Eart</p>
+                    <p style="padding:0px 5px;">Dubai : United Arab Emiretes</p>
                 </div>
                 <div class="col-sm-12 col-md-4 text-center mt-10">
-                    <div>
+                    {% comment %} <div>
                         <h3>Socials</h3>
 
                         <hr style="width: 30%; color: black; height: 1px; background-color:white;">
@@ -160,16 +161,20 @@
                             <a href="" target="_blank"
                                 class="fa fa-linkedin" style="font-size:25px;"></a>
                         </div>
-                        <div class="text-center">
-
+                        <div class="text-center"> {% endcomment %}
+                            <div class="col-lg-4">
+                                <div class="social-list-2">
+                                    <ul>
+                                        <li><a href="https://github.com/AbdElMegeed-7" target="_blank" class="github-bg"><i class="fa fa-github" style="font-size:36px"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/in/abdelmegeed-ahmed/" target="_blank" class="linkedin-bg"><i class="fa fa-linkedin" style="font-size:36px"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
             </div>
-
-
-
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -183,4 +188,4 @@
 
 </body>
 
-</html
+</html>
