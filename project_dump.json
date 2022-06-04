@@ -1,0 +1,68 @@
+[
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$320000$W9m0sTWaJlnJ5jyYcQPVyc$TLDcwxW2hkJ7QQn5cquTSXkcIo2Jy+V3F8oCcN6C9no=",
+        "last_login": "2022-06-04T05:34:28.466Z",
+        "is_superuser": false,
+        "username": "abdooo",
+        "first_name": "",
+        "last_name": "",
+        "email": "abdooo@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2022-06-04T05:33:58.367Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$320000$MFdv7Bjstk9fsItxZ9Gi3V$PZU1U7DqFmI8eUXEyPojm/HQEdeH6vVMWSvcHgcgqpw=",
+        "last_login": "2022-06-04T06:26:58.011Z",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "admin@gmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2022-06-04T06:26:16.689Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.profile",
+    "pk": 1,
+    "fields": {
+        "user": [
+            "abdooo"
+        ],
+        "section": null,
+        "image": "default.jpg",
+        "bio": "",
+        "skills": "",
+        "aoi": "",
+        "github": "",
+        "linkedin": ""
+    }
+},
+{
+    "model": "users.profile",
+    "pk": 2,
+    "fields": {
+        "user": [
+            "admin"
+        ],
+        "section": null,
+        "image": "default.jpg",
+        "bio": "",
+        "skills": "",
+        "aoi": "",
+        "github": "",
+        "linkedin": ""
+    }
+}
+]
