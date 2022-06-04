@@ -1,10 +1,17 @@
 from django.contrib import admin
-from .models import Profile, Grade, Section, Question, Answer
-# Register your models here.
+from .models import Grade, Question, Answer, Section, Profile
 
 
-admin.site.register(Profile)
-admin.site.register(Grade)
-admin.site.register(Section)
-admin.site.register(Question)
+class adminGrade(admin.ModelAdmin):
+    fields = ('user', 'ut1', 'ut2', 'ut3')
+
+
+class adminQuestion(admin.ModelAdmin):
+    fields = ['question_field', 'section']
+
+
+admin.site.register(Grade, adminGrade)
+admin.site.register(Question, adminQuestion)
 admin.site.register(Answer)
+admin.site.register(Section)
+admin.site.register(Profile)
