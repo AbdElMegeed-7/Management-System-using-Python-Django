@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-pi!3%%f11++0+pbv_-h#+blr+gt1-fhosc$n@lp_16(^z4*tgr
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    'https://djangomanagementsystem.herokuapp.com/', 'https://127.0.0.1:8000']
+    'djangomanagementsystem.herokuapp.com', '127.0.0.1:8000']
 CSRF_TRUSTED_ORIGINS = [
     'https://djangomanagementsystem.herokuapp.com', 'https://127.0.0.1:8000']
 
@@ -156,47 +156,47 @@ SITE_ID = 2
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-# STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
-STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
-# LOGGING = {
-#     'version': 1,
-#     'disable_existing_loggers': False,
-#     'formatters': {
-#         'verbose': {
-#             'format': ('%(asctime)s [%(process)d] [%(levelname)s] '
-#                        'pathname=%(pathname)s lineno=%(lineno)s '
-#                        'funcname=%(funcName)s %(message)s'),
-#             'datefmt': '%Y-%m-%d %H:%M:%S'
-#         },
-#         'simple': {
-#             'format': '%(levelname)s %(message)s'
-#         }
-#     },
-#     'handlers': {
-#         'null': {
-#             'level': 'DEBUG',
-#             'class': 'logging.NullHandler',
-#         },
-#         'console': {
-#             'level': 'INFO',
-#             'class': 'logging.StreamHandler',
-#             'formatter': 'verbose'
-#         }
-#     },
-#     'loggers': {
-#         'django': {
-#             'handlers': ['console'],
-#             'level': 'DEBUG',
-#             'propagate': True,
-#         },
-#         'django.request': {
-#             'handlers': ['console'],
-#             'level': 'DEBUG',
-#             'propagate': False,
-#         },
-#     }
-# }
+# STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'verbose': {
+            'format': ('%(asctime)s [%(process)d] [%(levelname)s] '
+                       'pathname=%(pathname)s lineno=%(lineno)s '
+                       'funcname=%(funcName)s %(message)s'),
+            'datefmt': '%Y-%m-%d %H:%M:%S'
+        },
+        'simple': {
+            'format': '%(levelname)s %(message)s'
+        }
+    },
+    'handlers': {
+        'null': {
+            'level': 'DEBUG',
+            'class': 'logging.NullHandler',
+        },
+        'console': {
+            'level': 'INFO',
+            'class': 'logging.StreamHandler',
+            'formatter': 'verbose'
+        }
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['console'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+        'django.request': {
+            'handlers': ['console'],
+            'level': 'DEBUG',
+            'propagate': False,
+        },
+    }
+}
 
 # django_heroku.settings(locals())
-django_heroku.settings(config=locals(), staticfiles=False,logging=False)
+django_heroku.settings(config=locals(), staticfiles=False, logging=False)
